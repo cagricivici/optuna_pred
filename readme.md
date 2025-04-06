@@ -12,3 +12,5 @@ Takeaways for me: I was assuming that predicting the test data can be misleading
 On the other hands, If you let the model finish its own training, the final model might have been overfitted. Because I have allowed the model see all training data. With the help of stratified kfold, the model predicts the test data until it sees the all training data.
 
 - Also we could use random search cv or grid search but the way they are working is not intelligent. They search randomly also *they are not able to think that it went better or worse*, that's why they dont direct the search into wise direction. But Optuna can do that. Optuna is looking forward to seeing the metrics that the model gave. If it catches good results, then it go deeper into that direction. With the formal way to say: *Optuna focuses the search in those promising regions, rather than exploring blindly.*
+
+I truncated my code so that it will focus on only optuna optimizations.
